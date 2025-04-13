@@ -4,32 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/styles.css">
-    <title>Mitchell Fontaine-Portfolio</title>
+    <title>Mitchell Fontaine-Eportfolio</title>
 </head>
 <body>
     <header>
         <img src="assets/images/profile_pic.jpeg" alt="Logo" class="logo">
         <h1>Mitchell Fontaine</h1>
-        <p>Computer Scientist/Army Veteran</p>
+        <p>Computer Science Student/Army Veteran</p>
     </header>
     
     <section>
-        <h2>About Me</h2>
-        <p>Hello! I'm Mitchell, an aspiring software developer. Welcome to my portfolio!</p>
+        <h2>CS-499 Computer Science Capstone Project</h2>
+        <h3>Professional Self-Assessment</h3>
+        <p>My experience in the Computer Science program at Southern New Hampshire University has been instrumental in refining my professional goals and strengthening 
+            my technical expertise. Through rigorous coursework and hands-on projects, I’ve developed the skills necessary to deliver immediate value to future employers. 
+            This ePortfolio highlights my proficiency in designing and developing industry-standard software solutions. While it represents only a portion of my work in the program, 
+            it showcases my competencies in three key areas: Software Design & Engineering, Algorithms & Data Structures, and Databases. Each project demonstrates my ability 
+            to apply theoretical knowledge to practical, real-world challenges.</p>
+        <p>I also gained experience communicating with stakeholders to ensure a well-rounded product in other classes. To include my work in Software Development Lifecycle, 
+            where I gained knowledge for each role in a team software environment, such as QA, product owner, project manager, developer, etc. Security was another segment 
+            of my studies, where I’ve taken multiple courses that teach these concepts, including Secure Coding and Client Server Development. Particularly in Secure Coding, 
+            I learned about creating security policies and types of vulnerabilities in software programs.</p>
     </section>
 
     <section id="projects">
-        <h2>Projects</h2>
+        <h2>Capstone Project</h2>
         <div class="project">
             <h3>Event Tracking Application</h3>
             <p>This event tracking app is a robust and user-friendly Android application designed to help users manage 
                 their events, reminders, and tasks efficiently. Built with modern Android development practices, this app 
                 allows users to create, update, and delete events, set reminders with alarms, and organize their schedules 
-                seamlessly. The app features a clean and intuitive UI, secure user authentication, and real-time notifications, making it 
-                a reliable tool for personal and professional use. This project demonstrates my skills in Java, XML, SQLite, and Android Studio.</p>
+                seamlessly. The app originally featured an intuitive UI, secure user authentication, and real-time notifications, making it 
+                a reliable tool for personal and professional use. It was chosen as an artifact for my ePortfolio because it demonstrates 
+                my skills in Java and the use of Android Studio. The app features a clean and intuitive user interface built with 
+                ConstraintLayout, CardView, and RecyclerView, demonstrating my ability to create visually appealing and user-friendly designs.
+                I implemented a notification system using AlarmManager and NotificationManager, showcasing my ability to integrate Android components.
+                I created a SQLite database to store and manage event data as well as CRUD operations, demonstrating my proficiency in database design and management. 
+                Through the duration of this capstone course updates to this project were made
+                to demonstrate my skills in Software Engineering/Design, Data Structures & Algorithms, and Databases.</p>
             <a href="https://github.com/MitchellFont/CS-360">View Project</a>
+
+            <h3>Software Engineering and Design Updates</h3>
+            <p>The artifact has improved through my update of the user interface with some animations, custom themes, and a more intuitive layout. 
+                I enhanced the notification system to support recurring reminders and notification sounds. The code is now divided into smaller, reusable components. 
+                I improved readability, organization, and error handling to make the code easier to maintain. I then isolated logic in separate classes and methods
+                to make unit testing easier. I met the outcomes by designing a new UI, adding better error handling, isolating logic in separate classes and methods, 
+                and improving the overall readability of the codebase.</p>
+            
+            <h3>Data Structures & Algorithms</h3>
+            <p>The artifact has improved with my optimizing data structures and algorithms. I replaced my linear search with a hash map to find reminders by ID 
+                and provide faster access when editing or deleting events. Sorting was made more efficient with Comparator which ensures a logical display 
+                order of earliest first. I used a priority queue for priority-based alarms so that alarms are processed in chronological order and not insertion order.
+                An update to RecyclerView was then made in Custom.java so it avoids any unnecessary redraws. The course outcomes I planned to meet from module one were met.
+                I optimized data structures for event filtering and sorting using a hash map, priority queue, and Comparator sorting. Overall efficiency was improved with
+                RecyclerView updates and reduced some redundancy. I then added synchronized blocks in RemindManager to increase security.</p>
+            
+            <p>While I was creating this update to my artifact, I learned that some trade-offs are unavoidable. Priority queue improved scheduling 
+                but it also required some thread-safety measures. I also learned that the optimization of algorithms for Outcome 3 led to a better overall 
+                design which helped satisfy Outcome 4. One of the challenges I faced was thread safety when implementing the priority queue, but I was able 
+                to overcome it by synchronizing blocks. Another challenge I had was maintaining sync between the hash map and RecyclerView. This was overcome 
+                through the use of state management where I implemented a single source of truth.</p>
+
+            <h3>Databases</h3>
+            <p>This artifact shows my software development skills in database systems and design.  By migrating from SQLite to PostgreSQL, I showcased my 
+                ability to evaluate and implement more scalable database solutions, complete with proper connection handling and asynchronous operations 
+                to maintain UI responsiveness. The integration of comprehensive analytics tracking to include event views, user interactions, and trend 
+                analysis highlights my capacity to extend system functionality to meet updated data-driven requirements. The improvements align with 
+                course outcome 3 through optimized queries and schema design, and outcome 4 through my implementation of industry-standard tools and 
+                techniques in a mobile environment.</p>
+
+            <p>Through this enhancement process, I gained valuable insights into the practical challenges of database migrations and performance optimization. 
+                The transition to PostgreSQL required careful planning to maintain data integrity while adding new features, teaching me the importance of 
+                thorough testing during structural changes. I particularly grew in my understanding of asynchronous database operations in Android, 
+                learning to balance complex background tasks with smooth user experiences. The analytics implementation pushed me to design efficient 
+                SQL queries that could aggregate data meaningfully without impacting performance, a skill that will serve me well in future data-intensive projects.</p>
+
+            <p>Several challenges emerged during development that significantly contributed to my growth as a developer. Adapting PostgreSQL for use in an Android environment 
+                required creative problem-solving, as this isn't a typical implementation. I learned to leverage JDBC with AsyncTask to overcome this hurdle while maintaining 
+                security and performance as best as I could. Designing the analytics system taught me to think critically about what data matters most and how to present it effectively. 
+                I also discovered how to make compromises between ideal database design and practical implementation constraints, a crucial skill for development.</p>
         </div>
-        <div class="project">
+
+        <!--<div class="project">
             <h3>PixelLock</h3>
             <p>This project is a Python application that enables users to encode passwords into images 
                 using steganography techniques and decode them later. The application provides a graphical user 
