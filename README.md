@@ -5,11 +5,11 @@ My experience in the Computer Science program at Southern New Hampshire Universi
 
 This ePortfolio highlights my proficiency in designing and developing industry-standard software solutions. While it represents only a portion of my work in the program, it showcases my competencies in three key areas:
 
-### Software Design & Engineering
+- Software Design & Engineering
 
-### Algorithms & Data Structures
+- Algorithms & Data Structures
 
-### Databases
+- Databases
 
 Each project demonstrates my ability to apply theoretical knowledge to practical, real-world challenges.
 
